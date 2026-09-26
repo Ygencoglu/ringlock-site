@@ -1,0 +1,82 @@
+/* Ringlock sitesi - oyunun paletiyle ayni (Solarized Light).
+   Tek dosya, cerceve yok: bir gizlilik politikasinin yuklenmesi icin
+   kimsenin megabaytlarca javascript indirmesi gerekmiyor. */
+:root {
+  --bg:     #fdf6e3;
+  --panel:  #eee8d5;
+  --ink:    #586e75;
+  --dim:    #93a1a1;
+  --accent: #10605a;
+  --edge:   #2aa198;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 20px 80px;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: ui-monospace, "JetBrains Mono", "SF Mono", Menlo, monospace;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+main { max-width: 680px; margin: 0 auto; }
+
+header { padding: 64px 0 40px; }
+
+h1 {
+  font-size: 34px;
+  letter-spacing: 6px;
+  margin: 0 0 8px;
+  color: var(--accent);
+}
+
+.tag { color: var(--dim); margin: 0; letter-spacing: 1px; }
+
+h2 {
+  font-size: 19px;
+  margin: 44px 0 12px;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+a { color: var(--edge); }
+
+table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--panel);
+  vertical-align: top;
+}
+th { color: var(--accent); font-weight: 600; }
+
+code, .mail {
+  background: var(--panel);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.note {
+  background: var(--panel);
+  border-left: 3px solid var(--edge);
+  padding: 14px 18px;
+  margin: 24px 0;
+}
+
+footer {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--panel);
+  color: var(--dim);
+  font-size: 14px;
+}
+
+/* Telefonda okunacak: kenar boslugu ve punto buna gore. */
+@media (max-width: 480px) {
+  body { font-size: 15px; padding: 0 16px 60px; }
+  h1 { font-size: 26px; letter-spacing: 4px; }
+  header { padding: 40px 0 28px; }
+}
